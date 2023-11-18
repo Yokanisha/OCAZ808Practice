@@ -19,6 +19,18 @@ public class II {
         int[] multi = new int[3];
         System.out.println(multi[1]);
 
+        Object[] cc = new Object[] {
+                new Integer [7],
+                new FF(),
+        };
+        Integer[] intArray = (Integer[]) cc[0];
+        for (int i = 0; i < intArray.length; i++) {
+            intArray[i] = i + 1; }
+
+        Integer[] dd = {1,2};
+        Integer[] ee= new Integer[]{1,2};
+
+
     }
 
 
@@ -29,4 +41,8 @@ public class II {
     public static void methodeB(String string) {
         System.out.println(string);
     }
+}
+
+class FF {
+
 }
