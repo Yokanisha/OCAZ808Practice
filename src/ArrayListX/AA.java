@@ -27,6 +27,7 @@ public class AA {
 
         int[][] array1 = new int[2][];
         array1[0] = new int[]{1,2};
+        array1[1] = new int[]{1,2,3,4};
         System.out.println(array1[0][0]);
 
         Object[] objArray = new Object[] {
@@ -74,6 +75,19 @@ public class AA {
             System.out.print(element + " ");
         }
         System.out.println(b.equals(a));
+
+        long[] array4 = new long[5];
+        array4[0] = 'c';
+        long longvar = 10;
+        array4[1] = longvar;
+
+
+
+
+
+
+
+
 
 
 
