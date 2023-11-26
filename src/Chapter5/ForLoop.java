@@ -29,8 +29,27 @@ public class ForLoop {
                 muliArray[i][j] = i+j;
                 System.out.println(muliArray[i][j]);
             }
+        }
 
 
+        System.out.println("--initalize array with for-loop---");
+        int[] myArray = new int[5];
+        for(int i=0; i< myArray.length; ++i) {
+            myArray[i] = i;
+            if((myArray[i]%2)==0) {
+                myArray[i] = 20;
+            }
+        }
+
+        //You cant modify, delete, initialize in a for-each-loop
+        System.out.println("--modify array with for-each-loop---");
+        for(int i : myArray) {
+            int count = 0;
+            if(i == 20) {
+                myArray[count] = 111;
+            }
+            count++;
+            System.out.println(i);
         }
 
 

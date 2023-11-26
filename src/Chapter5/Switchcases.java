@@ -6,7 +6,7 @@ public class Switchcases {
 
         int marks = 202;
         switch (marks) {
-            case 10:
+            case 10: //null - geht nicht
                 System.out.println(10);
                 break;
             case 20:
@@ -109,6 +109,36 @@ public class Switchcases {
             default:
                 System.out.println("default");
         }
+
+
+        System.out.println("---marks4---");
+
+        int marks4 = 40;
+//        final int f;  //sowas geht nicht
+//        f = 40;
+        switch (marks4) {
+            case 10/3:
+                System.out.println(10);
+                break;
+            case 20:
+                System.out.println(20);
+                break;
+            case 30:
+                System.out.println(30);
+                break;
+            default:
+                System.out.println("default");
+                break;
+//            case f:
+//                System.out.println(40);
+//                break;
+        }
+
+        boolean ss = false;
+        if(ss=true)
+            System.out.println("");
+
+
 
 
 
