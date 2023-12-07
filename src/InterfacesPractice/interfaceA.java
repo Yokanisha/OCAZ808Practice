@@ -18,7 +18,6 @@ public interface interfaceA {
     public default void methodeD() { //muss NICHT übernommen werden
         System.out.println("methodeD");
     }
-    interface interface2 {} //muss NICHT übernommen werden. Man kann auch kein "sout" hinschreiben
 
     static void methodeE() {
         System.out.println("methodeE - static methode - muss einen body haben. Er muss aber nicht 'geerbt' werden");
@@ -28,6 +27,9 @@ public interface interfaceA {
     static int age = 1; //access modifiers wie public sind überflüssig
 
     String plz = "von interfaceA";
+
+
+
 
 }
 
@@ -42,6 +44,7 @@ interface interfaceB extends interfaceA {
 
     //Sowas geht, obwohl die Methode in interfaceA deklariert wurde
     public void methodeD();
+
 
     String plz = "von interfaceB";
 
