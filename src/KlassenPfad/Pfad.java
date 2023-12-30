@@ -2,25 +2,19 @@ package KlassenPfad;
 
 public class Pfad {
 
+    static int[] x = new int[1];
+
+
 
     public static void main(String[] args) {
 
+        x[0] = 10;
 
 
 
-    }
-
-    public void switchTest(char x) {
-        switch (x) {
-            case 'b':   // 1
-            default:   // 2
-            case 2:    // 3
-            case 80:    // 4
         }
 
-
-
-
-    }
-
 }
+
+class A { }
+class B extends A { }
