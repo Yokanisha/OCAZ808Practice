@@ -26,18 +26,37 @@ class Sub extends Super{
 }
 
 
-class A {
-    protected int i;
-    A(int i) {    this.i = i;    }
-    A() {        }
 
+
+
+
+
+
+
+class A {
+    public int getCode(){ return 2;}
 }
 
-class B extends A {
-    B()  {
-        System.out.println("i = " + i);
+class AA extends A {
+    public int getCode(){ return 3;}
+}
+
+ class TestClass {
+
+    public static void main(String[] args) throws Exception {
+        A a = new A();
+        A aa = new AA();
+        AA aaa = new AA();
+        System.out.println(a.getCode() + " " + aaa.getCode());
     }
 
+    public int getCode() {
+        return 1;
+    }
 }
+
+
+
+
 
 
