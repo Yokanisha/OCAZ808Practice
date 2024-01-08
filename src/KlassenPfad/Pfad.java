@@ -26,6 +26,10 @@ char aaa = 1222;
         a.link = b;
 
         a.showOne(21);
+
+
+
+
     }
 
     static int staticMethode() {
